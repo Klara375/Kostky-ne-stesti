@@ -13,7 +13,7 @@
 ---
 
 ## Pár informací na začátek <br>
-Pro spuštění exportované aplikace, kterou lze stáhnout pod odkazem výše zmíněným, je nutné mít nainstalovanou Javu.
+Pro spuštění exportované aplikace, kterou lze stáhnout pod odkazem výše zmíněným, je nutné mít nainstalovanou Javu. Načítání může chvilinku trvat kvůli většímu počtu obrázků.
 Hra vznikla na motivy mnou dříve vytvořeného programu ['Boj o slevu'](https://github.com/Klara375/Boj-o-slevu). 
 Oba kódy jsou napsány v programu [Processing](https://processing.org/). 
 Součástí hry je několik odkazů na GEJMRovu a Pedrovu sérii [V říši divů](https://www.youtube.com/watch?v=nwjD8WFzFjQ&t=205s). 
