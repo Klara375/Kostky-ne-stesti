@@ -1,8 +1,7 @@
 ﻿# Mr. GEJMR  VS  kostky (ne)štěstí <br>
-©Klára Ledvinková
 
 ![Obrázek](/Screenshot_1.png)
-[Stažení aplikace](https://drive.google.com/drive/folders/1AIIEmlT6kt9VrS5n6LsuwKwGHPk9LwjI?usp=sharing) <br>
+## [Stažení aplikace](https://drive.google.com/drive/folders/1AIIEmlT6kt9VrS5n6LsuwKwGHPk9LwjI?usp=sharing) <br>
 
 ## Obsah README <br>
 * Informace
@@ -12,13 +11,15 @@
 * TODO list
 
 ---
+
 ## Pár informací na začátek <br>
-Vytvořeno v květnu 2020AD 
 Pro spuštění exportované aplikace, kterou lze stáhnout pod odkazem výše zmíněným, je nutné mít nainstalovanou Javu.
 Hra vznikla na motivy mnou dříve vytvořeného programu ['Boj o slevu'](https://github.com/Klara375/Boj-o-slevu). 
 Oba kódy jsou napsány v programu [Processing](https://processing.org/). 
 Součástí hry je několik odkazů na GEJMRovu a Pedrovu sérii [V říši divů](https://www.youtube.com/watch?v=nwjD8WFzFjQ&t=205s). 
 Těžko říct, kdo, a jestli vůbec někdo, bude tohle někdy číst, ale i tak chci poděkovat Adamovi, protože bez něj bych neznala ani tyhle základy programování.<br>
+Vytvořeno v květnu 2020AD <br>
+
 ---
 
 ## Úvod <br>
@@ -47,8 +48,8 @@ Dej si ale pozor, ne všechny tě posunou k vítězství! <br>
 |**space**     |restart hry         |
 |**p**         |zobrazí menu - pauza|
 |**enter**     |skryje menu - start |
-|w             |? ;)                |
-|0,1,2         |nastavení obtížnosti|
+|**0,1,2 **    |nastavení obtížnosti|
+|**w**         |? ;)                |
 ---
 ---
 
@@ -60,3 +61,4 @@ Budu ráda za vyplnění [zpětné vazby](https://forms.gle/N6SDw25ZUaRmFz879) <
 THX for playing <br>
 
 Nebýt GEJMŘeje, tohle nikdy nevniklo :).<br>
+©Klára Ledvinková
