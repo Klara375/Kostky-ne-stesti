@@ -1,7 +1,7 @@
 class WinScrean {
   int d = 100;                              //zavedení proměnné pro zobrazení hráče
   int xSpeed = 4;
-  int x = gejmr.x;                         //x-ová souřadnice hráče
+  int x = gejmr.x;                          //x-ová souřadnice hráče
   int ximg;
   float ee = 1.5*d;
   float ex = 2.5*d; 
@@ -14,8 +14,8 @@ class WinScrean {
     BigHeadLImage = loadImage("BhlavaL.png");
     CobbleImage = loadImage("Cobble.png");
   }
-  void run() {                      //obrazovka, která se zobrazí, když hráč vyhraje
-    background(10, 170, 230);                                     //barva pozadí
+  void run() {                                 //obrazovka, která se zobrazí, když hráč vyhraje
+    background(10, 170, 230);                  //barva pozadí
     textSize(25);
     if (difficultyHard) {
       text("COBBLESTONE WINNER!", width/2 - 115, 75);                          //a text
@@ -29,7 +29,7 @@ class WinScrean {
     fill(255);
     ximg = x;
   }
-  void player() {                             //funkce, která spustí hráče - spuštění tří funkcí najednou, aaby byl kód v hlavní části přehlednější
+  void player() {                            
     display();
     key();
     if (difficultyHard) {
@@ -50,7 +50,7 @@ class WinScrean {
     strokeWeight(1);
   }
 
-  void key() {                              //pohyb hráče + zobrazení obrázku hlavy do směru, kterým se pohybuje
+  void key() {                              //pohyb hráče + zobrazení obrázku hlavy
     if (key == 'a') {
       x -= xSpeed;
       imageMode(CENTER);

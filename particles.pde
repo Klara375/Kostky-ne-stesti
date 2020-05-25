@@ -38,7 +38,7 @@ class Particles {
     if (location.y > height + 25) {
       return true;
     } else {
-      return false;                                    //při stisknutí m, uvod = true -> menu se zobrazí
+      return false;                                    
   }
   }
 }

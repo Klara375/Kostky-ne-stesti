@@ -1,11 +1,11 @@
 class Player {
-  int d = 30;                              //zavedení proměnné pro zobrazení hráče
+  int d = 30;                                //zavedení proměnné pro zobrazení hráče
   int xSpeed = 6;
-  int x = width/2;                         //x-ová souřadnice hráče
+  int x = width/2;                           //x-ová souřadnice hráče
   int ximg;
   float ee = 1.5*d;
   float ex = 2.5*d;
-  PImage HeadLImage;                       //zavedení obrázků
+  PImage HeadLImage;                         //zavedení obrázků
   PImage HeadRImage;
 
 
@@ -13,7 +13,7 @@ class Player {
     HeadLImage = loadImage("hlavaL.png");    //načtení obrázků
     HeadRImage = loadImage("hlavaR.png");
   }
-  void run() {                             //funkce, která spustí hráče - spuštění tří funkcí najednou, aaby byl kód v hlavní části přehlednější
+  void run() {                               //funkce, která spustí hráče - spuštění tří funkcí najednou, aaby byl kód v hlavní části přehlednější
     display();
     key();
     border();
@@ -31,7 +31,7 @@ class Player {
     ximg = x;
   }
 
-  void key() {                              //pohyb hráče + zobrazení obrázku hlavy do směru, kterým se pohybuje
+  void key() {                               //pohyb hráče + zobrazení obrázku hlavy směrem, kterým se pohybuje
     if (key == 'a') {
       x -= xSpeed;
       imageMode(CENTER);

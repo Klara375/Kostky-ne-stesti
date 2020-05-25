@@ -1,5 +1,5 @@
 class Settings {
-  PImage StromImage;                        //zavedení obrázků
+  PImage StromImage;                                       //zavedení obrázků
   PImage PedroStromImage;
   boolean uvod;
   PImage uvodImage;
@@ -7,7 +7,7 @@ class Settings {
   PImage logoImage;
 
   Settings() {
-    StromImage = loadImage("stromek.png");            //načtení obrázků
+    StromImage = loadImage("stromek.png");                 //načtení obrázků
     PedroStromImage = loadImage("stromPedro.png");
     uvodImage = loadImage("uvodIMG.png");
     kostkaImage = loadImage("kostkaF.png");
@@ -76,7 +76,7 @@ class Settings {
     text("p - pauza", 820, 50);
   }
 
-  void bill() {                                                       //častka na kase
+  void bill() {                                                       //skóre
     fill(255);
     textSize(20);
     text(skore, 1145, 50);

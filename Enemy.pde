@@ -14,8 +14,8 @@ class Enemy {
 
   Enemy() {
     location = new PVector(random (0, width), 0);    //nastavení původní lokace nepřítele
-    velocity = new PVector(0, 5);    //nastavení rychlosti
-    EnemyLImage = loadImage("kostkaE.png");    //načtení obrázků
+    velocity = new PVector(0, 5);                    //nastavení rychlosti
+    EnemyLImage = loadImage("kostkaE.png");          //načtení obrázků
     EnemyRImage = loadImage("kostkaER.png");
     DeathImage = loadImage("death.png");
     TNTImage = loadImage("TNT.png");
@@ -30,17 +30,17 @@ class Enemy {
     fall(gejmr);
   }
 
-  void update(Player gejmr) {                              //pohyb
-    acceleration = new PVector(gejmr.x - location.x, 0);     //zrychlení směrem ke hráčovi
+  void update(Player gejmr) {                                 //pohyb
+    acceleration = new PVector(gejmr.x - location.x, 0);      //zrychlení směrem ke hráčovi
     acceleration.normalize();                                 //normalizace vektoru
-    acceleration.mult(0.035);                                  //zmenšení zrychlení
+    acceleration.mult(0.035);                                 //zmenšení zrychlení
     velocity.add(acceleration);                               //přidání zrychlení k rychlosti
     velocity.limit(topspeed);                                 //limitování maximální rychlosti
     location.add(velocity);                                   //přičtení rychlosti k lokaci
   }
 
-  void display(Player gejmr) {                               //zobrazení obrázku
-    if (gejmr.x - location.x<0) {                            //otočení obrázku směrem k hráči
+  void display(Player gejmr) {                                //zobrazení obrázku
+    if (gejmr.x - location.x<0) {                             //otočení obrázku směrem k hráči
       imageMode(CENTER);
       EnemyLImage.resize(0, d);
       image(EnemyLImage, location.x, location.y);
@@ -73,7 +73,7 @@ class Enemy {
     failed = false;
   }
 
-  boolean hit(Player gejmr) {                            //porovnání souřadnic nepřítele a hráče
+  boolean hit(Player gejmr) {                               //porovnání souřadnic nepřítele a hráče
     boolean isInside = (gejmr.x - 0.9*d < location.x && gejmr.x + 0.9*d > location.x );
     boolean isTouching = location.y + 0.5*d> height - 4.5*gejmr.d;
 
@@ -84,7 +84,7 @@ class Enemy {
   void fail() {
     for (int i = 0; i < pocetEnemy; i++) {
       if (unluckyCube[i].hit(gejmr)) {                      //když nepřítel narazí do hráče, spustí se "failScreen"
-        background(0);                              //obsahuje spoustu textu a obrázky
+        background(0);                                      //obsahuje spoustu textu a obrázky
         fill(255);
         textSize(35);
         text("'The chance of this cube was destruction... Probably'", 170, 100);

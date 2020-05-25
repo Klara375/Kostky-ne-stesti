@@ -1,6 +1,5 @@
 //Pro GEJMRa
 //©2020
-//Klára Ledvinková
 
 int pocetCube = 27;      
 int pocetEnemy = 2;
@@ -39,7 +38,7 @@ void setup() {
 
 void draw() {
   background(10, 170, 230);                     //barva pozadí
-  skore = 0;                                    //nastavení počáteční ceny
+  skore = 0;                                    
   if (background.uvod) {                        //když úvod = true, zobrazí se menu
     background.menu();
     if (keyPressed) {
@@ -65,15 +64,15 @@ void draw() {
         }
       }
     }
-  } else {                                      //jinak se spustí hra + hráč, nepřítel a sleva
+  } else {                                      //jinak se spustí hra + hráč a kostky
     background.display();
     gejmr.run();
     for (int i = 0; i < pocetCube; i++) {
       sleva[i].run();
-      if (sleva[i].landed()) {                                                //resetování kostek, když opustí okno
+      if (sleva[i].landed()) {                                                
         sleva[i].reset();
       }
-      if (sleva[i].isCatched) skore += 1;                                     //za chycenou cubu se od ceny odečte 50
+      if (sleva[i].isCatched) skore += 1;                                    
     }
     if (difficultyEasy) {
       unluckyCube[0].run();
@@ -84,19 +83,19 @@ void draw() {
       if (unluckyCube[1].landed()) unluckyCube[1].reset();
     }
 
-    background.bill();                                  //vykreslení ceny na kase
+    background.bill();                                  
     for (int i = 0; i < pocetEnemy; i++) {
       unluckyCube[i].fail();
     }
 
-    if (skore > 26) {                                   //když je cena menší než 150 konec -> výhra
+    if (skore > 26) {                                   
       for (int i = 0; i < pocetCube; i++) {
         konec.run();
         chicken.run();
         konec.player();
       }
       for (int j = 0; j < pocetEnemy; j++) {
-        unluckyCube[j].location.y = 0;                                //nastavení y-ové souřadnice nepřítele,
+        unluckyCube[j].location.y = 0;                                
       }
       for (int i = 0; i < pocetWin; i++) {
         particles[i].run();
