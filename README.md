@@ -50,7 +50,7 @@ Dej si ale pozor, ne všechny tě posunou k vítězství! <br>
 |**space**     |restart hry         |
 |**p**         |zobrazí menu - pauza|
 |**enter**     |skryje menu - start |
-|**0,1,2 **    |nastavení obtížnosti|
+|**0,1,2**     |nastavení obtížnosti|
 |**w**         |? ;)                |
 ---
 ---
